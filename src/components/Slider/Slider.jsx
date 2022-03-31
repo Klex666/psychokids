@@ -44,8 +44,8 @@ const Slider = () => {
                 slidesPerView={3}
                 >
                 { imgData.map((obj) => (
-                    <SwiperSlide className='slider__img' key={obj.id}>
-                        <img src={obj.url} alt="Img" height={300} width={300}/>
+                    <SwiperSlide key={obj.id}>
+                        <img className='slider__img' src={obj.url} alt="Img" height={300} width={300}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
