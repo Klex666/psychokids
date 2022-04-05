@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Logo from '../../img/header__logo.png'
 import './header.sass'
 
 import { Link, NavLink } from 'react-router-dom';
@@ -31,7 +30,7 @@ const Header = () => {
                     >ABOUT US</NavLink></li>
                 </ul>
                 <div className="nav__logo">
-                    <Link to='/'><img src={Logo} alt="" className="logo_img"/></Link>
+                    <Link to='/'><img src="/img/header__logo.png" alt="" className="logo_img"/></Link>
                 </div>
             </div>
         </div>

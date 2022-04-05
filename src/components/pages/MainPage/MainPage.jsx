@@ -1,12 +1,11 @@
 import React from 'react';
 import './mainPage.sass';
 
-import SupportLogo from '../../../img/support__logo.png'
-import ClothesImg from '../../../img/clothes__preview.png';
-
 import Slider from "../../Slider/Slider"
 
-const MainPage = () => {
+
+
+const MainPage = ({sliderImg}) => {
     return (
         <>
             <div className="overlay">
@@ -16,18 +15,18 @@ const MainPage = () => {
                             <h2>NEW COLLECTION</h2>
                             <h3>"PSYCHOKIDS"</h3>
                         </div>
-                        <img src={SupportLogo} alt="" className="support__logo" />
+                        <img src="/img/support__logo.png" alt="" className="support__logo" />
                     </div>
 
                     <div className="preview__right">
-                        <img src={ClothesImg} alt="" className="clothes__img" />
+                        <img src="/img/clothes__preview.png" alt="" className="clothes__img" />
                     </div>
                 </div>
             </div>
             <div className="photo">
                 Photo
             </div>
-            <Slider/>
+            <Slider obj={sliderImg}/>
         </>
     );
 };
