@@ -6,7 +6,6 @@ import axios from 'axios';
 
 import Header from './components/Header/Header'
 import MainPage from "./components/pages/MainPage/MainPage";
-import Footer from "./components/Footer/Footer";
 import Catalog from "./components/pages/Catalog/Catalog"
 
 function App() {
@@ -49,7 +48,6 @@ function App() {
                 <Route path='/' element={<MainPage sliderImg={sliderImg}/>}/>
                 <Route path='/catalog' element={<Catalog isLoading={isLoading} clothes={clothes}/>}/>
               </Routes>
-            <Footer/>
           </main>
         </div>
   );
